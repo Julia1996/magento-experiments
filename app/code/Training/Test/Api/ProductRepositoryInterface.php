@@ -5,7 +5,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Magento\Catalog\Api;
+namespace Training\Test\Api;
 
 /**
  * @api
