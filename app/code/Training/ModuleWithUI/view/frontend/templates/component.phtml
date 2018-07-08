@@ -1,0 +1,21 @@
+<div id="component-render-block" data-bind="scope: 'testcomponent'">
+    <!-- ko template: getTemplate() --><!--/ko-->
+    <!-- ko template: getTemplate2() --><!--/ko-->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "testcomponent": {
+                        "component": "Training_ModuleWithUI/js/component",
+                        "config": {
+                            "canDisplay": true,
+                            "canTextBeDisplayedDefault": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>

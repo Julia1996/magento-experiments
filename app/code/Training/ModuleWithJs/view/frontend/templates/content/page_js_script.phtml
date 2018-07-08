@@ -1,0 +1,15 @@
+<p>
+    <button id="submit_btn2">
+        <?= __('Click JS Script') ?>
+    </button>
+</p>
+
+<script type="text/x-magento-init">
+    {
+        "#submit_btn2": {
+            "Training_ModuleWithJs/js/events": { 
+                "alert_text": "clicked js script"
+            }
+        }
+    }
+</script>

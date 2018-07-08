@@ -1,0 +1,13 @@
+<p>
+    <button id="submit_btn"><?= __('Click') ?></button>
+</p>
+
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        $('#submit_btn').click(function() {
+            alert('CLICKED!');
+        });
+    });
+</script>

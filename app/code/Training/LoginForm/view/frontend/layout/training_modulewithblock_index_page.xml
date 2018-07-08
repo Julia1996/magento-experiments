@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block 
+                class="Training\ModuleWithBlock\Block\Page" 
+                name="training.content.page" 
+                template="Training_ModuleWithBlock::content/page.phtml"
+            >
+                <arguments>
+                    <argument name="at_sku" xsi:type="string">getSku</argument>
+                    <argument name="var2" xsi:type="string">lala</argument>
+                </arguments>  
+            </block>
+            <block 
+                class="Magento\Framework\View\Element\Template" 
+                name="training.content.viewmodel" 
+                template="Training_ModuleWithBlock::content/page_via_view_model.phtml"
+            >
+                <arguments>
+                    <argument name="at_sku" xsi:type="string">getSku</argument>
+                    <argument name="var2" xsi:type="string">lala</argument>
+                    <argument name="viewModel" xsi:type="object">Training\ModuleWithBlock\ViewModel\Page</argument>
+                </arguments>  
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -7,4 +7,22 @@
             </argument>
         </arguments>
     </type>
+    <type name="Magento\Catalog\Model\Product">
+        <plugin
+                name="training_test_plugin"
+                type="Training\Test\Plugin\MyPlugin"
+                sortOrder="10"/>
+    </type>
+    <type name="Magento\Theme\Block\Html\Footer">
+        <plugin
+                name="training_test_plugin"
+                type="Training\Test\Plugin\MyPlugin"
+                sortOrder="20"/>
+    </type>
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin
+                name="training_test_plugin"
+                type="Training\Test\Plugin\MyPlugin"
+                sortOrder="30"/>
+    </type>
 </config>

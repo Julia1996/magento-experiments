@@ -1,0 +1,9 @@
+<!-- ko if: canTextBeDisplayed() -->
+    <div class="some-text">Some text</div>
+<!--/ko-->
+
+<!-- ko ifnot: canTextBeDisplayed() -->
+    <div class="some-text">Hidden text</div>
+<!--/ko-->
+
+<button data-bind="click: clickShowHide">Show/hide</button>

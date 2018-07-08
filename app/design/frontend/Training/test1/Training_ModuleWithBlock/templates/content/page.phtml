@@ -1,0 +1,31 @@
+<div style="background-color: #00ff00;">CUSTOM TEMPLATE FROM THEME</div>
+
+<?php if ($block->canShow()): ?>
+    <div>hfkjdhskjd</div>
+<?php endif; ?>
+    
+    <?php
+    
+    var_dump($block->check());
+    ?>
+
+<br>
+<?php
+echo get_class($this)
+?>
+<br>
+
+<?php
+echo get_class($block)
+?>
+<br>
+
+<?php
+echo $fileName
+?>
+<br>
+<?php
+echo get_class($this->helper('\Magento\Catalog\Helper\Data')) // bad practice
+?>
+<br>
+<?php echo $block->getData('add_attribute') ?>

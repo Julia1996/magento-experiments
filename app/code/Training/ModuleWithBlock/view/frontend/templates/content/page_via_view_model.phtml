@@ -1,0 +1,5 @@
+<?= get_class($block->getData('viewModel')) ?>
+
+<?php if ($block->getData('viewModel')->canShow()): ?>
+    <div>can show view model</div>
+<?php endif; ?>

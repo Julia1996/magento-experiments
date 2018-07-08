@@ -1,0 +1,7 @@
+<?php if ($block->canShow()): ?>
+    <div>can show content</div>
+<?php endif ?>
+
+<?= $block->getData('var2') ?>
+
+<?php var_dump($block->check()) ?>
